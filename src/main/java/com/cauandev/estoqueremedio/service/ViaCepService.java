@@ -1,8 +1,7 @@
-package com.cauandev.Lab_Padroes_de_Projetos_Spring.service;
+package com.cauandev.estoqueremedio.service;
 
-import com.cauandev.Lab_Padroes_de_Projetos_Spring.model.Endereco;
+import com.cauandev.estoqueremedio.model.Endereco;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,5 +1,6 @@
-package com.cauandev.Lab_Padroes_de_Projetos_Spring.model;
+package com.cauandev.estoqueremedio.repository;
 
+import com.cauandev.estoqueremedio.model.Endereco;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
