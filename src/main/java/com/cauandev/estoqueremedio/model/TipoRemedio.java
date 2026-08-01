@@ -1,15 +1,12 @@
 package com.cauandev.estoqueremedio.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.format.datetime.DateFormatter;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "Tipo")
 public abstract class TipoRemedio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

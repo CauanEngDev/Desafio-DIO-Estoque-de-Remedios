@@ -1,11 +1,12 @@
 package com.cauandev.estoqueremedio.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import com.cauandev.estoqueremedio.service.ViaCepService;
 
-@Entity
+/**
+ * Usando classe apenas para buscar e retorno de endereço utilizando
+ * {@link ViaCepService} para buscar informações do paciente.
+ */
 public class Endereco {
-    @Id // CEP como Chave Primária pois Consegue Localizar os Outros Atributos
     private String cep;
     private String logradouro;
     private String complemento;
